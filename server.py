@@ -17,7 +17,7 @@ def installModel():
         f.write(get('https://www.dropbox.com/s/bsb4qew5h0mvm1l/model.zip?dl=1').content)
     with ZipFile(modelZip, 'r') as z:
         z.extractall(CDIR)
-    remove(modelZip)
+    remove('model.zip')
     print('Model installed!')
 
 
