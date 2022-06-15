@@ -92,3 +92,6 @@ def give():
             return jsonify(error='Where\'s file?(')
     else:
         return jsonify(error='POST Method Only!!!')
+
+if __name__ == "__main__":
+    app.run()
