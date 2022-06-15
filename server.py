@@ -31,8 +31,7 @@ if exists(modelZip):
 if not exists(modelDir):
     installModel()
 
-net = dnn.readNet(pjoin(modelDir, 'yolov3.weights'),
-                  pjoin(modelDir, 'yolov3.cfg'))
+net = dnn.readNet(pjoin(modelDir, 'yolov3.cfg'),pjoin(modelDir, 'yolov3.weights'))
 
 
 def getOutputLayers(net):
